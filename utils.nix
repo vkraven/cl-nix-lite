@@ -251,6 +251,7 @@ rec {
           clisp = file: ''"${lisp}/bin/clisp" -E UTF-8 -norc "${file}"'';
           ecl = file: ''"${lisp}/bin/ecl" --shell "${file}"'';
           sbcl = file: ''"${lisp}/bin/sbcl" --script "${file}"'';
+          clasp-common-lisp = file: ''"${lisp}/bin/clasp" --script "${file}"'';
         }.${name};
       };
 
